@@ -662,6 +662,10 @@ Aucun message en gras sur ce listing puisque tous les messages de ce listing son
 
 Par défaut le listing est trié par date décroissante.
 
+.. note::
+
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
+
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 
 Un lien sur le message permet d'accéder à la fiche de visualisation du message dans le contexte du dossier d'instruction si l'utilisateur est TECHNICIEN et dans le contexte du dossier de coordination si l'utilisateur est CADRE.
@@ -692,6 +696,10 @@ Si l'utilisateur possède un service, deux colonnes supplémentaires apparaissen
 Si un des messages répond aux critères 'non lu' pour l'utilisateur connecté (voir :ref:`dossiers_listing_messages_mes_non_lus`) alors la ligne s'affiche en gras.
 
 Par défaut le listing est trié par date décroissante.
+
+.. note::
+
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
 
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 
@@ -731,6 +739,10 @@ Les colonnes du listing ont fixes :
 - tech acc : marqueur de lecture du message pour un utilisateur tech acc
 
 Par défaut le listing est trié par date décroissante.
+
+.. note::
+
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
 
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 

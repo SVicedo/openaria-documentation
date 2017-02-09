@@ -664,7 +664,7 @@ Par défaut le listing est trié par date décroissante.
 
 .. note::
 
-   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut est lui bien chronologique.
 
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 
@@ -699,7 +699,7 @@ Par défaut le listing est trié par date décroissante.
 
 .. note::
 
-   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut est lui bien chronologique.
 
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 
@@ -742,7 +742,7 @@ Par défaut le listing est trié par date décroissante.
 
 .. note::
 
-   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut permet est lui bien chronologique.
+   Du fait du format de la colonne date (DD/MM/YYYY HH:MM:SS), le tri manuel sur cette colonne est alphanumérique et non chronologique. Cependant le tri par défaut est lui bien chronologique.
 
 L'ajout, la modification et la suppression de message sont impossibles via l'interface.
 

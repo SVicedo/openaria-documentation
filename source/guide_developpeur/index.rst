@@ -26,4 +26,5 @@ Sommaire
     module_swrod.rst
     module_geolocalisation.rst
     web_services.rst
+    gestion_des_logs.rst
 

@@ -30,6 +30,14 @@ dyn/services.inc.php ::
 - **ads__liste_services__acc** : correspond à la liste des codes représentant le service ERP Accessibilité tel qu'ils sont définis dans la colonne 'abrégé' du paramétrage des services d'openADS par exemple "Division d;ERPACC"
 
 
+*Types de DC nécessaires au bon fonctionnement du module*:
+
+- **PC**
+- **AT**
+- **VR**
+- **DAACT**
+
+
 Activation de l'option
 ######################
 

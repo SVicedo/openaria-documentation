@@ -365,7 +365,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de ga
 *Traitement* :
 
 • Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
-• Création d'un DC DAACT-PLAN : Il sera automatiquement qualifié en fonction de la qualification du plan (DC PC-PLAN) auquel il est rattaché.
+• Création de DC (DAACT-PLAN) : Il sera automatiquement qualifié en fonction de la qualification du plan DC (PC-PLAN) auquel il est rattaché.
 
 
 *Contenu de l'échange* :

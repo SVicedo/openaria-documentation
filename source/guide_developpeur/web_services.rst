@@ -125,9 +125,9 @@ Gestion des messages asynchrones
         "module": "messagesasync"
       }
 
-=====================================
-Gestion des consultations officielles
-=====================================
+=========================
+Gestion des consultations
+=========================
 
 .. http:post:: /openaria/services/rest_entry.php/maintenance
 

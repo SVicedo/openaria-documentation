@@ -105,6 +105,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de tr
         "emetteur" : "instr",
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
+            "dossier_instruction" : "PC0130551600001P0",
             "competence" : "",
             "contraintes_plu" : "",
             "references_cadastrales" : ""
@@ -276,6 +277,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
             "consultation" : 2,
+            "dossier_instruction" : "PC0130551600001P0",
             "date_envoi" : "31/12/2015",
             "service_abrege" : "ACC",
             "service_libelle" : "Service Accessibilité",
@@ -335,6 +337,7 @@ L'objectif principal de cet échange est de permettre d'informer les services ER
         "emetteur" : "instr",
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
+            "dossier_instruction" : "PC0130551600001P0",
             "decision" : ""
         }
     }
@@ -398,6 +401,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de ga
         "contenu" : {
             "consultation" : 2,
             "date_envoi" : "31/12/2015",
+            "dossier_instruction" : "PC0130551600001P0",
             "service_abrege" : "SC",
             "service_libelle" : "Service Conformité",
             "date_limite": "31/01/2016"
@@ -686,6 +690,7 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est d'i
         "emetteur" : "admin",
         "dossier_instruction" : "AT0130551600001P0",
         "contenu": {
+            "dossier_instruction" : "AT0130551600001P0",
             "type_piece" : "complémentaire"
         }
     }
@@ -746,10 +751,73 @@ L'objectif principal de cet échange est de permettre aux services ERP d'être i
         "emetteur" : "admin",
         "dossier_instruction" : "AT0130551600001P0",
         "contenu": {
+            "dossier_instruction" : "AT0130551600001P0",
             "date_creation" : "31/12/2015",
             "nom_fichier" : "DGIMPC.pdf",
             "type" : "Imprimé de demande de permis de construire",
             "categorie" : "Définition Générale"
+        }
+    }
+
+
+
+.. _echange_ads_erp_114:
+
+========================================================================
+[114](Échange ADS → ERP) Dossier PC Notification de dossier à enjeux ADS
+========================================================================
+
+L'objectif principal de cet échange est de permettre aux services ADS de partager le caractère 'à enjeu' du dossier pour en informer le service ERP.
+
+
+*Identifiant* : ADS_ERP__PC__ENJEU_ADS
+
+
+*Cas d'utilisation* :
+
+• Un instructeur du referentiel ADS peut qualifier le dossier comme Dossier à enjeux. Dans ce cas, un message « Dossier à enjeux ADS » est envoyé vers l'application openARIA afin de mettre à jour le Dossier. La mise à jour est effectuée automatiquement et un message est attaché au dossier. 
+
+*Déclencheur* :
+
+• L'option ERP est activée
+• Le parametre enjeu ERP du formulaire de modification de dossier d'instruction qui change de statut(dossier::triggermodifierapres())
+• Le dossier est de type PC (paramètre 'erp__dossier_nature__PC')
+• Le dossier est marqué comme « connecté au référentiel ERP »
+
+
+*Traitement* :
+
+• Création de message : Un message de catégorie "sortant" est ajouté dans openADS afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction. → Marqueur(s) de lecture du message : message marqué comme lu par défaut.
+• Envoi de la requête à destination de la ressource 'messages' d'openARIA. :ref:`Configuration des échanges sortants<configuration_echanges_sortants_referentiel_erp>`.
+
+
+
+*Contenu de l'échange* :
+
+- **type** : Type de message
+- **date** : Date/heure d’envoi du message
+- **emetteur** : Émetteur du message (Nom/Prénom/Login de l’utilisateur à l’origine du message)
+- **dossier_instruction** : Identifiant du dossier d’instruction
+- **contenu** :
+
+  • Dossier à enjeux ADS : Oui / Non
+
+
+*Exemple* :
+
+.. sourcecode:: http
+      
+    POST /openads/services/rest_entry.php/messages HTTP/1.1
+    Host: localhost
+
+    {
+        "type": "ADS_ERP__PC__ENJEU_ADS",
+        "date": "10/01/2017 12:52",
+        "emetteur": "John Doe",
+        "dossier_instruction": "PC0130551600001P0",
+        "contenu": {
+            "dossier_instruction": "PC0130551600001P0",
+            "Dossier à enjeu ADS": "oui"
         }
     }
 
@@ -923,6 +991,7 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
+            "dossier_instruction": "PD12R0001",
             "Complétude ERP ACC": "non",
             "Motivation Complétude ERP ACC": "Lorem ipsum dolor sit amet..."
         }
@@ -981,6 +1050,7 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
+            "dossier_instruction": "PD12R0001",
             "Complétude ERP SECU": "oui",
             "Motivation Complétude ERP SECU": "Lorem ipsum dolor sit amet..."
         }
@@ -1041,6 +1111,7 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
+            "dossier_instruction": "PD12R0001",
             "Confirmation ERP": "oui",
             "Type de dossier ERP": "Lorem ipsum dolor sit amet...",
             "Catégorie de dossier ERP": "Lorem ipsum dolor sit amet..."
@@ -1100,6 +1171,7 @@ L'objectif principal de cet échange est de permettre aux services ERP de partag
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
+            "dossier_instruction": "PD12R0001",
             "Dossier à enjeux ERP" : "oui"
         }
     }
@@ -1346,4 +1418,56 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
     GET /openads/services/rest_entry.php/dossier_instructions/PC0130551601234P0 HTTP/1.1
     Host: localhost
 
+
+.. _echange_erp_ads_213:
+
+==================================================================================
+[213](Échange ERP → ADS) Dossier PC Accusé de reception de consultation officielle
+==================================================================================
+
+L'objectif principal de cet échange est de accusé la receptiond'une demande de consultation d'un dossier.
+
+*Identifiant* : ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE
+
+
+*Cas d'utilisation* :
+
+• Cette information est envoyée par le référentiel ERP au référentiel ADS suite à la notification de consultation officielle d'un dossier PC.
+
+*Déclencheur* :
+
+• Appel d'une méthode de maintenance par cron
+• Le dossier est marqué comme « connecté au référentiel ADS »
+• Un message de type :ref:`echange_ads_erp_104` ou :ref:`echange_ads_erp_106` a été reçu sur le dossier
+
+
+*Traitement* :
+
+• Création de message : Un message de catégorie "sortant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
+• Envoi de la requête à destination de la ressource 'message' d'openADS. :ref:`Configuration des échanges sortants<configuration_echanges_sortants_referentiel_ads>`
+
+
+*Contenu de l'échange* :
+
+• « consultation » : l'identifiant de la consultation
+• « date_reception » : Date de la reception de la consultation au format JJ/MM/AAAA
+
+
+*Exemple* :
+
+.. sourcecode:: http
+
+    POST /openads/services/rest_entry.php/messages HTTP/1.1
+    Host: localhost
+
+    {
+        "type": "ADS_ERP__PC__AR_CONSULTATION_OFFICIELLE",
+        "date": "16/06/2014 14:12",
+        "emetteur": "John Doe",
+        "dossier_instruction": "PD12R0001",
+        "contenu": {
+            "dossier_instruction": "PD12R0001",
+            "consultation" : 2
+        }
+    }
 

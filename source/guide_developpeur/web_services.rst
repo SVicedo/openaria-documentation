@@ -125,6 +125,23 @@ Gestion des messages asynchrones
         "module": "messagesasync"
       }
 
+=====================================
+Gestion des consultations officielles
+=====================================
+
+.. http:post:: /openaria/services/rest_entry.php/maintenance
+
+   **Exemple de requête** :
+
+   .. sourcecode:: http
+      
+      POST /openaria/services/rest_entry.php/maintenance HTTP/1.1
+      Host: localhost
+
+      {
+        "module": "ar_consultation"
+      }
+
 
 
 
@@ -154,6 +171,7 @@ Cette ressource permet d'interfacer un message.
    - :ref:`echange_ads_erp_111`
    - :ref:`echange_ads_erp_112`
    - :ref:`echange_ads_erp_113`
+   - :ref:`echange_ads_erp_114`
 
    **Exemple de requête** :
 

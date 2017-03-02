@@ -105,7 +105,6 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de tr
         "emetteur" : "instr",
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
-            "dossier_instruction" : "PC0130551600001P0",
             "competence" : "",
             "contraintes_plu" : "",
             "references_cadastrales" : ""
@@ -277,7 +276,6 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
             "consultation" : 2,
-            "dossier_instruction" : "PC0130551600001P0",
             "date_envoi" : "31/12/2015",
             "service_abrege" : "ACC",
             "service_libelle" : "Service Accessibilité",
@@ -337,7 +335,6 @@ L'objectif principal de cet échange est de permettre d'informer les services ER
         "emetteur" : "instr",
         "dossier_instruction" : "PC0130551600001P0",
         "contenu" : {
-            "dossier_instruction" : "PC0130551600001P0",
             "decision" : ""
         }
     }
@@ -401,7 +398,6 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de ga
         "contenu" : {
             "consultation" : 2,
             "date_envoi" : "31/12/2015",
-            "dossier_instruction" : "PC0130551600001P0",
             "service_abrege" : "SC",
             "service_libelle" : "Service Conformité",
             "date_limite": "31/01/2016"
@@ -690,7 +686,6 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est d'i
         "emetteur" : "admin",
         "dossier_instruction" : "AT0130551600001P0",
         "contenu": {
-            "dossier_instruction" : "AT0130551600001P0",
             "type_piece" : "complémentaire"
         }
     }
@@ -751,7 +746,6 @@ L'objectif principal de cet échange est de permettre aux services ERP d'être i
         "emetteur" : "admin",
         "dossier_instruction" : "AT0130551600001P0",
         "contenu": {
-            "dossier_instruction" : "AT0130551600001P0",
             "date_creation" : "31/12/2015",
             "nom_fichier" : "DGIMPC.pdf",
             "type" : "Imprimé de demande de permis de construire",
@@ -783,7 +777,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 • Le parametre enjeu ERP du formulaire de modification de dossier d'instruction qui change de statut(dossier::triggermodifierapres())
 • Le dossier est de type PC (paramètre 'erp__dossier_nature__PC')
 • Le dossier est marqué comme « connecté au référentiel ERP »
-
+• L'enjeu urbanisme change de statut
 
 *Traitement* :
 
@@ -816,7 +810,6 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
         "emetteur": "John Doe",
         "dossier_instruction": "PC0130551600001P0",
         "contenu": {
-            "dossier_instruction": "PC0130551600001P0",
             "Dossier à enjeu ADS": "oui"
         }
     }
@@ -991,7 +984,6 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
-            "dossier_instruction": "PD12R0001",
             "Complétude ERP ACC": "non",
             "Motivation Complétude ERP ACC": "Lorem ipsum dolor sit amet..."
         }
@@ -1050,7 +1042,6 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
-            "dossier_instruction": "PD12R0001",
             "Complétude ERP SECU": "oui",
             "Motivation Complétude ERP SECU": "Lorem ipsum dolor sit amet..."
         }
@@ -1111,7 +1102,6 @@ L'objectif principal de cet échange est de permettre aux services ERP d'apporte
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
-            "dossier_instruction": "PD12R0001",
             "Confirmation ERP": "oui",
             "Type de dossier ERP": "Lorem ipsum dolor sit amet...",
             "Catégorie de dossier ERP": "Lorem ipsum dolor sit amet..."
@@ -1171,7 +1161,6 @@ L'objectif principal de cet échange est de permettre aux services ERP de partag
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
-            "dossier_instruction": "PD12R0001",
             "Dossier à enjeux ERP" : "oui"
         }
     }
@@ -1425,7 +1414,7 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
 [213](Échange ERP → ADS) Dossier PC Accusé de reception de consultation officielle
 ==================================================================================
 
-L'objectif principal de cet échange est de accusé la receptiond'une demande de consultation d'un dossier.
+L'objectif principal de cet échange est de fournir un accusé de réception de consultation par le référentiel ERP au référentiel ADS.
 
 *Identifiant* : ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE
 
@@ -1466,7 +1455,6 @@ L'objectif principal de cet échange est de accusé la receptiond'une demande de
         "emetteur": "John Doe",
         "dossier_instruction": "PD12R0001",
         "contenu": {
-            "dossier_instruction": "PD12R0001",
             "consultation" : 2
         }
     }

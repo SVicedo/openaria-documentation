@@ -7,6 +7,9 @@ Interface avec le référentiel ADS
 
 Interface avec le logiciel openADS : http://www.openmairie.org/catalogue/openads
 
+.. note:: Il est nécessaire d'utiliser au minimum la version 3.36.0 d'openADS pour le fonctionnement de cette interface.
+
+
 
 Configuration du module
 #######################

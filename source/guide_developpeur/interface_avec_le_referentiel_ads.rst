@@ -776,17 +776,12 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 
 *Déclencheur* :
 
-• L'option ERP est activée
-• Le parametre enjeu ERP du formulaire de modification de dossier d'instruction qui change de statut(dossier::triggermodifierapres())
-• Le dossier est de type PC (paramètre 'erp__dossier_nature__PC')
-• Le dossier est marqué comme « connecté au référentiel ERP »
-• L'enjeu urbanisme change de statut
+• :ref:`Web Service exposé<web_services_ressource_messages_post>`
 
 *Traitement* :
 
-• Création de message : Un message de catégorie "sortant" est ajouté dans openADS afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction. → Marqueur(s) de lecture du message : message marqué comme lu par défaut.
-• Envoi de la requête à destination de la ressource 'messages' d'openARIA. :ref:`Configuration des échanges sortants<configuration_echanges_sortants_referentiel_erp>`.
-
+• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0. 
+• Mise à jour du champ 'enjeu ADS' du DC en fonction de la valeur du message.
 
 
 *Contenu de l'échange* :
@@ -804,7 +799,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 
 .. sourcecode:: http
       
-    POST /openads/services/rest_entry.php/messages HTTP/1.1
+    POST /openaria/services/rest_entry.php/messages HTTP/1.1
     Host: localhost
 
     {

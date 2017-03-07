@@ -542,7 +542,7 @@ Pour cela il est nécessaire de passer par le script d'entrée à l'application 
 Accéder à la fiche d'un objet
 *****************************
 
-L'url doit être composée des pramètres suivant :
+L'url doit être composée des paramètres suivants :
 
 * **obj** objet de l'élément que l'on souhaite visualiser (*etablissement* ou *dc*) ;
 * **action** type de redirection (*view* pour accéder à une fiche) ;
@@ -558,7 +558,7 @@ Exemples d'url à composer :
 Accéder au listing d'une sélection
 **********************************
 
-L'url doit être composée des pramètres suivant :
+L'url doit être composée des paramètres suivants :
 
 * **obj** objet de l'élément que l'on souhaite visualiser (*etablissement* ou *dc*) ;
 * **action** type de redirection (*list* pour accéder à une sélection d'objet) ;

@@ -1437,7 +1437,6 @@ L'objectif principal de cet échange est de fournir un accusé de réception de 
 *Contenu de l'échange* :
 
 • « consultation » : l'identifiant de la consultation
-• « date_reception » : Date de la reception de la consultation au format JJ/MM/AAAA
 
 
 *Exemple* :

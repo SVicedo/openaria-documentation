@@ -1218,7 +1218,7 @@ L'objectif principal de cet échange est de permettre aux services ERP de partag
 L'objectif principal de cet échange est de permettre aux services ERP de répondre à une consultation d'un instructeur ADS directement depuis openARIA (sans nécessité de le faire depuis l'interface dédiée aux services consultés dans openADS).
 
 
-*Identifiant* : ERP_ADS__PC__RETOUR_DE_CONSULTATION
+*Identifiant* : ERP_ADS__PC__RETOUR_CONSULTATION
 
 
 *Cas d'utilisation* :

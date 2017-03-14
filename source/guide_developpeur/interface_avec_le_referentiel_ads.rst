@@ -831,7 +831,8 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 *Déclencheur* :
 
 • L'option ADS est activée
-• Mise à jour au moment de la notification de la décision (arrêté) d'ouverture uniquement.
+• Le dossier est marqué comme « connecté au référentiel ADS »
+• Un document généré signé de type « Arrêté » est ajouté (Validation du formulaire de modification du document généré avec ajout d'un fichier signé alors que le champ était vide au préalable)
 
 
 *Traitement* :
@@ -1181,7 +1182,8 @@ L'objectif principal de cet échange est de permettre aux services ERP de partag
 *Déclencheur* :
 
 • L'option ADS est activée
-• Mise à jour au moment de la notification de la décision (arrêté) d'autorisation uniquement.
+• Le dossier est marqué comme « connecté au référentiel ADS »
+• Un document généré signé de type « Arrêté » est ajouté (Validation du formulaire de modification du document généré avec ajout d'un fichier signé alors que le champ était vide au préalable)
 
 
 *Traitement* :

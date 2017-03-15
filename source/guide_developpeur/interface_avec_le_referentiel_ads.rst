@@ -1295,14 +1295,16 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
 
 *Cas d'utilisation* :
 
-• Co complétude, vérifier que la complétude a été faite seulement sur l'un des deux services alors on envoi pas. Si les deux complétudes sont faites, alors on envoi un message de complétude. Le marqueur complet chez lez deux services envoi un message.
+• À sa création dans openADS et dans openARIA, le dossier AT est considéré comme *complet*
+• En cas d'incomplétude constatée par un des services d'openARIA, il va y a voir un message [210] openARIA > openADS, qui indiquera à openADS que le dossier est incomplet : un événement dans openADS devrait passer le dossier dans un état *incomplet*. État qui ne devrait permettre uniquement de recevoir des pièces complémentaires.
+• En complément, la réception de pièces complémentaires sur le dossier dans openADS devrait le repasser de fait de *incomplet* à *complet* et ré-engager le processus de complétude mentionné ci-dessus. 
 
 
 *Déclencheur* :
 
 • L'option ADS est activée
 • Le dossier est marqué comme « connecté au référentiel ADS »
-• Le formulaire de complétude/incomplétude est validé sur un DI
+• Le formulaire de complétude/incomplétude est validé sur un DI avec la case à cocher "incomplet" cochée
 
 
 *Traitement* :
@@ -1313,7 +1315,7 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
 
 *Contenu de l'échange* :
 
-• « message » : « complet » ou « incomplet »
+• « message » : « complet », cette information ne correspond pas à la qualification de la complétude (complet ou incomplet) mais à un marqueur qui indique à openADS qu'il doit y appliquer un événement de complétude sur le dossier, dans le cas d'openARIA l'information transmet un état incomplet
 • « date » : Date de la mise à jour de l'information au format JJ/MM/AAAA
 
 

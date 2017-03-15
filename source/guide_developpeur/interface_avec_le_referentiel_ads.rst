@@ -40,6 +40,10 @@ dyn/services.inc.php ::
 - **VR**
 - **DAACT**
 
+*Il faut renseigner la catégorie des avis pour permettre d'établir une correspondance entre les avis d'openARIA et les avis du référentiel ADS*:
+
+- Voir le menu 'administration & paramétrage > métiers > avis'.
+
 
 Activation de l'option
 ######################

@@ -1,7 +1,7 @@
 .. openaria documentation master file.
 
 ==========================
-openARIA 1.1 documentation
+openARIA 1.2 documentation
 ==========================
 
 .. note::

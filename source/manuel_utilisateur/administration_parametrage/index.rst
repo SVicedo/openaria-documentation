@@ -375,6 +375,10 @@ Utilisation des options :
 
 * **dc_a_qualifier_redlimit** : c'est le nombre de jours depuis la date de la demande à partir duquel les enregistrements dans le listing des DC à qualifier et dans le widget des DC à qualifier apparaissent en rouge. Si le paramètre n'est pas positionné alors la valeur par défaut est de 15 jours. :ref:`dossiers_dc_a_qualifier`
 
+* **template__proces_verbal_numero** : Par défaut : `[ANNEE]/[CHRONO]`. Les variables de remplacement disponibles sont : [ANNEE] ('2017' année du PV sur 4 caractères), [CHRONO] ('00123' séquence du procès verbal pour le service pour l'année du PV).
+
+* **template__proces_verbal_numero_complet** : Par défaut : `[CODE_SERVICE]-[PROCES_VERBAL_NUMERO]`. Les variables de remplacement disponibles sont : [CODE_SERVICE] ('SI' ou 'ACC' le code du service émetteur en majuscule), [PROCES_VERBAL_NUMERO] (le numéro officiel du procès verbal selon le template ci-dessus).
+
 
 Gestion des utilisateurs
 ========================

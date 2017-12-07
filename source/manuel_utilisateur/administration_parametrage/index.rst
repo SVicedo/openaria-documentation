@@ -379,6 +379,8 @@ Utilisation des options :
 
 * **template__proces_verbal_numero_complet** : Par défaut : `[CODE_SERVICE]-[PROCES_VERBAL_NUMERO]`. Les variables de remplacement disponibles sont : [CODE_SERVICE] ('SI' ou 'ACC' le code du service émetteur en majuscule), [PROCES_VERBAL_NUMERO] (le numéro officiel du procès verbal selon le template ci-dessus).
 
+* **template__arrete_numero** : Par défaut : `[ANNEE]_[CHRONO]_ERP`. Les variables de remplacement disponibles sont : [ANNEE] ('2017' année de l'arrêté sur 4 caractères), [CHRONO] ('00123' séquence de l'arrêté pour cette année).
+
 
 Gestion des utilisateurs
 ========================

@@ -1,5 +1,5 @@
-Documentation openARIA version 1.3
-==================================
+Documentation openARIA version 1.4 (non publiée)
+================================================
 
 .. image:: http://readthedocs.org/projects/openaria/badge/?version=latest
     :target: http://openmairie.readthedocs.io/projects/openaria/fr/latest/?badge=latest

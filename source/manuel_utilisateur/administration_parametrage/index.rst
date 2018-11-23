@@ -364,8 +364,14 @@ Divers paramètres de l'application : champs de fusion généraux disponibles po
 
 Utilisation des options :
 
+* **etablissement_code_prefixe** : Par défaut : ''. A la création d'un établissement, le code est composé de ce préfixe et d'un identifiant numérique. Par exemple : 'T12' ou 'F2432'.
+
 * **option_sig** : la valeur par défaut est *aucun*. Les valeurs possibles sont
   *sig_externe*, *sig_interne* ou *aucun*.
+
+* **option_contrainte** : la valeur par défaut est *true*. Les valeurs possibles sont *true* et *false*.
+
+* **option_unite_accessibilite** : la valeur par défaut est *true*. Les valeurs possibles sont *true* et *false*.
 
 * **option_referentiel_patrimoine** : :ref:`module_interface_avec_le_referentiel_patrimoine`
 

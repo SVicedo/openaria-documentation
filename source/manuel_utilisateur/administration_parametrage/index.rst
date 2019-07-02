@@ -366,6 +366,8 @@ Utilisation des options :
 
 * **etablissement_code_prefixe** : Par défaut : ''. A la création d'un établissement, le code est composé de ce préfixe et d'un identifiant numérique. Par exemple : 'T12' ou 'F2432'.
 
+* **etablissement_nature_erpr** : code de la nature d'établissement qui correspond à un ERP Référentiel (voir :ref:`etablissement_listing_referentiel`).
+
 * **option_sig** : la valeur par défaut est *aucun*. Les valeurs possibles sont
   *sig_externe*, *sig_interne* ou *aucun*.
 

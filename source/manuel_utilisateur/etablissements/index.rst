@@ -18,10 +18,12 @@ Chacun des deux listings permet une recherche avancée complète sur plusieurs c
 
 Lorsqu'un Système d'Information Géographique est paramétré, chaque ligne des listings d'établissements contient un icône en forme de Terre. Celui-ci permet d'être redirigé sur le SIG avec la vue centrée sur l'établissement correspondant à cette ligne.
 
+.. _etablissement_listing_referentiel:
+
 Depuis le menu "Référentiel ERP"
 ################################
 
-Liste tous les établissements qui constituent le référentiel officiel des ERP.
+Liste tous les établissements qui constituent le référentiel officiel des ERP, c'est-à-dire dont la nature de l'établissement correspond à la nature ERP Référentiel (voir :ref:`paramétrage 'etablissement_nature_erpr'<administration_parametre>`).
 
 Lorsqu'un Système d'Information Géographique est paramétré, un icône en forme de Terre au-dessus du listing permet d'être redirigé vers le SIG et de consulter la sélection actuelle d'établissements. S'il n'y a pas eu de recherche avancée, le bouton redirige vers la couche des établissements sur le SIG.
 

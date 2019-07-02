@@ -7,7 +7,7 @@ Tests et Intégration Continue
 
 
 openARIA possède des tests unitaires et fonctionnels joués intégralement à chaque modification du code source afin d'assurer sa stabilité et sa pérennité. 
-Tous les tests sont présents dans le répertoire tests/. Deux frameworks de test sont utilisés : RobotFramework et PHPUnit. http://openmairie.readthedocs.io/projects/omframework/fr/latest/reference/tests_ci/index.html
+Tous les tests sont présents dans le répertoire tests/. Deux frameworks de test sont utilisés : RobotFramework et PHPUnit. http://docs.openmairie.org/?project=framework&path=tests_ci/
 
 
 

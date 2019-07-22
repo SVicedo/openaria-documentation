@@ -251,7 +251,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
 • Création de DC (PC-PLAN) possible : Si le message [102] ou le [103] n'est pas arrivé avant, alors un dossier de coordination de type PC PLAN est créé.
 • Récupération des informations sur le DI ADS : Via l'échange [212] récupération de la localisation des travaux (adresse, références cadastrales) et récupération du ou des demandeurs.
 • Marquage du dossier DC (PC-PLAN) : Le marqueur « connecté avec le référentiel ADS » sur le dossier créé est positionnée à « OUI » afin de pouvoir identifier ce dossier à l'avenir.
-• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
+• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 3.
 
 
 *Contenu de l'échange* :
@@ -371,7 +371,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS de ga
 
 *Traitement* :
 
-• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
+• Création de message : Un message de catégorie "entrant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 3.
 • Création de DC (DAACT-PLAN) : Il sera automatiquement qualifié en fonction de la qualification du plan DC (PC-PLAN) auquel il est rattaché.
 
 

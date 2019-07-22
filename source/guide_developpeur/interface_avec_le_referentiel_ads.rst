@@ -1302,6 +1302,7 @@ Dans le contexte du guichet unique, l'objectif principal de cet échange est de 
 • À sa création dans openADS et dans openARIA, le dossier AT est considéré comme *complet*
 • En cas d'incomplétude constatée par un des services d'openARIA, il va y a voir un message [210] openARIA > openADS, qui indiquera à openADS que le dossier est incomplet : un événement dans openADS devrait passer le dossier dans un état *incomplet*. État qui ne devrait permettre uniquement de recevoir des pièces complémentaires.
 • En complément, la réception de pièces complémentaires sur le dossier dans openADS devrait le repasser de fait de *incomplet* à *complet* et ré-engager le processus de complétude mentionné ci-dessus. 
+• La modification de la complétude et des pièces attendues se fait par le porlet d'action, via l'action *gérer la complétude*. 
 
 
 *Déclencheur* :

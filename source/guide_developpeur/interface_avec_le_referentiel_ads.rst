@@ -268,7 +268,6 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
   - **date_envoi** : Date d'envoi de la consultation
   - **date_limite** : Date limite de réponse
 
-
 *Exemple* :
 
 .. sourcecode:: http
@@ -290,6 +289,7 @@ L'objectif principal de cet échange est de permettre à l'instructeur ADS d'ém
         }
     }
 
+Le deuxième message de consultation officielle pour avis sur le même dossier est affiché en rouge dans le widget et la liste des messages non lus.
 
 .. _echange_ads_erp_105:
 

@@ -54,7 +54,7 @@ Périodicité de Visite
 Paramétrage de la périodicité des visites obligatoires à réaliser sur les établissements de nature 'ERP référentiel'.
 
 
-La périodicité des visites s'applique sur les établissements dont la nature est 'ERP Référentiel' (**etablissement_nature_periodique** : paramètre correpondant au code de la nature 'ERPR') et dans l'état 'Ouvert' (**etablissement_etat_periodique** : paramètre correpondant au code de l'état 'OUVE').
+La périodicité des visites s'applique sur les établissements dont la nature est 'ERP Référentiel' (**etablissement_nature_periodique** : paramètre correpondant au code de la nature 'ERPR'), dans l'état 'Ouvert' (**etablissement_etat_periodique** : paramètre correpondant au code de l'état 'OUVE') et dont la ou les autorités compétentes sont paramétrées à 'CCS' et/ou 'SCDS' (**etablissement_autorite_competente_periodique** : paramètre correspondant aux codes des autorités compétentes 'CCS' et/ou 'SCDS').
 
 Un dossier de coordination de type 'Visite Périodique de Sécurité' (**dossier_coordination_type_periodique** : paramètre correpondant au code du type de dossier de coordination 'VPS') est le dossier de coordination rattaché à un établissement pour la gestion de la périodicité des visites.
 
@@ -367,6 +367,8 @@ Utilisation des options :
 * **etablissement_code_prefixe** : Par défaut : ''. A la création d'un établissement, le code est composé de ce préfixe et d'un identifiant numérique. Par exemple : 'T12' ou 'F2432'.
 
 * **etablissement_nature_erpr** : code de la nature d'établissement qui correspond à un ERP Référentiel (voir :ref:`etablissement_listing_referentiel`).
+
+**etablissement_autorite_competente_periodique** : code des autorités compétentes qui correspondent aux autorités compétentes mandatées pour mener des visites périodiques. Par exemple : 'CCS' ou 'SCDS'. Si plusieurs autorités compétentes sont mandatées pour mener des visites périodiques, le paramètre sera renseigné de la façon suivante : 'CCS;SCDS'.
 
 * **option_sig** : la valeur par défaut est *aucun*. Les valeurs possibles sont
   *sig_externe*, *sig_interne* ou *aucun*.

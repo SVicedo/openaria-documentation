@@ -346,6 +346,7 @@ L'objectif principal de cet échange est de permettre d'informer les services ER
         }
     }
 
+Dans le cas où le dossier d'instruction ADS est connecté à plusieurs dossiers de coordination ARIA, le message 105 est envoyé sur tous les dossiers de coordination.
 
 .. _echange_ads_erp_106:
 

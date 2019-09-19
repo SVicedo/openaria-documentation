@@ -216,3 +216,12 @@ Widget "Documents générés en attente de retour AR"
 .. image:: widget_documents_generes_attente_retour_ar.png
 
 Ce widget permet au cadre et à la secretaire de savoir combien il a de documents générés en attente de retour AR, c'est-à-dire finalisés, dont la date de retour signature ou la date d'envoi AR sont saisies et dont la date de retour AR n'est pas renseignée. Un lien permet d'accéder à la liste complète (voir :ref:`courrier_attente_retour_ar`). Le widget n'apparaît pas si aucun document généré n'est dans ce cas.
+
+
+
+Widget "Dossiers d'instruction à qualifier et/ou à affecter"
+##################################################
+
+.. image:: widget_dossiers_instruction_a_qualifier_affecter.png
+
+Ce widget permet au cadre et au technicien de savoir combien il a de dossiers d'instruction à qualifier et/ou à affecter. Un lien permet d'accéder à la liste complète des DI concernés. Le widget apparait si aucun dossier d'instruction n'est concerné.

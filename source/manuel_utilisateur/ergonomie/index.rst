@@ -220,7 +220,7 @@ Ce widget permet au cadre et à la secretaire de savoir combien il a de document
 
 
 Widget "Dossiers d'instruction à qualifier et/ou à affecter"
-##################################################
+############################################################
 
 .. image:: widget_dossiers_instruction_a_qualifier_affecter.png
 
